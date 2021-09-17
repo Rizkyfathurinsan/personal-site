@@ -36,19 +36,13 @@
             <tag name="sulu.rlp"/>
         </property>
 
-        <property name="article" type="text_editor">
-            <meta>
-                <title lang="en">Article</title>
-            </meta>
-        </property>
-
          <property name="Image" type="single_media_selection">
             <meta>
                 <title lang="en">add social media picture</title>
             </meta>
         </property>
 
-        <property name="url" type="urk">
+        <property name="url" type="url">
             <meta>
                 <title lang="en">add your social media links</title>
             </meta>
