@@ -69,8 +69,6 @@
       }
     </style>
 
-    <title>Welcome!</title>
-
      {% block meta %}
         {% include "@SuluWebsite/Extension/seo.html.twig" with {
             "seo": extension.seo|default([]),
@@ -80,7 +78,7 @@
         } %}
     {% endblock %}
 
-
+    <title>Welcome!</title>
   
   </head>
 
@@ -89,9 +87,9 @@
 
     <!-- header start -->
     <header>
-        <nav class="navbar navbar-fixed-top">
+        <nav class="navbar navbar-fixed-top" role="navigation">
           <div class="container">
-            <img src="images/coconut(3).png" alt="coconut logo" style="padding-top:10px;">
+            <img src="images/coconut(3).png" style="padding-top:10px;">
             <a class="navbar-brand" href="index.html#home">  Rizky Insan</a>
             <ul class="nav navbar-nav navbar-right tinggi kanan">
               <li style="font-size:20px;"><a href="index.html#home">Home</a></li>
