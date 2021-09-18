@@ -3,14 +3,14 @@
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="http://schemas.sulu.io/template/template http://schemas.sulu.io/template/template-1.0.xsd">
 
-    <key>aboutme</key>
+    <key>homepage</key>
 
-    <view>pages/aboutme</view>
+    <view>pages/homepage</view>
     <controller>Sulu\Bundle\WebsiteBundle\Controller\DefaultController::indexAction</controller>
     <cacheLifetime>86400</cacheLifetime>
 
     <meta>
-        <title lang="en">About Me</title>
+        <title lang="en">Homepage</title>
         <title lang="de">Startseite</title>
     </meta>
 
@@ -18,12 +18,10 @@
         <property name="title" type="text_line" mandatory="true">
             <meta>
                 <title lang="en">Title</title>
-                <title lang="de">Titel</title>
             </meta>
             <params>
                 <param name="headline" value="true"/>
             </params>
-
             <tag name="sulu.rlp.part"/>
         </property>
 
@@ -31,14 +29,90 @@
             <meta>
                 <title lang="en">Resourcelocator</title>
             </meta>
-
             <tag name="sulu.rlp"/>
         </property>
 
-        <property name="article" type="text_editor">
+        <section name="introduction">
             <meta>
-                <title lang="en">Article</title>
+                <title lang="en">Introduction</title>
             </meta>
-        </property>
+            <properties>
+                <property name="intro" type="text_editor">
+                    <meta>
+                        <title lang="en">Subtitle</title>
+                    </meta>
+                </property>
+                <property name="subtitle" type="text_editor">
+                    <meta>
+                        <title lang="en">Subtitle</title>
+                    </meta>
+                </property>
+            </properties>
+        </section>
+
+        <section name="aboutMe">
+            <meta>
+                <title lang="en">About Me section</title>
+            </meta>
+            <properties>
+                <property name="aboutMeHeader" type="text_line">
+                    <meta>
+                        <title lang="en">About Me</title>
+                    </meta>
+                </property>
+                <property name="aboutMeContent" type="text_editor">
+                    <meta>
+                        <title lang="en">Content</title>
+                    </meta>
+                </property>
+            </properties>
+        </section>
+
+        <section name="skills">
+            <meta>
+                <title lang="en">Add your skills</title>
+            </meta>
+            <properties>
+                <property name="skillName" type="text_line">
+                    <meta>
+                        <title lang="en">About Me</title>
+                    </meta>
+                </property>
+                <property name="skillImage" type="single_media_selection">
+                    <meta>
+                        <title lang="en">Add picture</title>
+                    </meta>
+                </property>
+            </properties>
+        </section>
+
+        <section name="footer">
+            <meta>
+                 <title lang="en">the footer</title>
+            </meta>
+            <properties>
+                
+                <property name="Image" type="single_media_selection">
+                        <meta>
+                            <title lang="en">Add social media picture</title>
+                        </meta>
+                    </property>
+
+                    <property name="socialMediaUrl" type="text_line">
+                        <meta>
+                            <title lang="en">Add your social media links</title>
+                        </meta>
+                    </property>
+
+                    <property name="phoneNumber" type="text_line">
+                        <meta>
+                            <title lang="en">Add your phone number</title>
+                        </meta>
+                    </property>
+            </properties>
+        </section>
+
+        
+        
     </properties>
 </template>
