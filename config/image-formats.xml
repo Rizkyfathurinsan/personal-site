@@ -21,4 +21,19 @@
 
     <img src="{{ image.thumbnails['300x'] }}" alt="{{ image.title }}" title="{{ image.description|default(image.title) }}">
     -->
+
+    <format key="128x">
+        <meta>
+            <title lang="en">Skill image</title>
+        </meta>
+        <scale x="128" y="128"/>
+    </format>
+
+    <format key="64x">
+        <meta>
+            <title lang="en">Social image</title>
+        </meta>
+        <scale x="64" y="64"/>
+    </format>
+
 </formats>
