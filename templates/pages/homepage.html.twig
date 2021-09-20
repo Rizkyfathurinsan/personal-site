@@ -2,21 +2,21 @@
 
 {% block content %}
 
-    <div id="home" class="parallax vertical-center" style="background-image: url('../images/IMG_1999.JPG');">
-            <div class="slider_content_outer" style="position: relative; height: 100%;">
-                <div class="slider_content skrollable skrollable-between" style="position: absolute; width: 98%; left: 0%; top: 33%; opacity: 1;"
-                data-0=" opacity: 1; width:98%; left:0.0%; top:33%; position: absolute" data-300=" opacity: 0; left:0.0%; top:23%;">
-                    <div style="text-align: center; margin-top: 150px" class="text all_at_once subtitle_bellow_title no_separator">
-                        <div>
-                        <h4 style="     text-shadow: 1px 1px 2px rgba(0,0,0,.4);color: #ffffff;font-size: 26px;font-style: normal;font-weight: 600"><span>{{content.intro | raw}}</span></h4>
-                        </div>
-                        <div>
-                        <h2 style="    text-shadow: 1px 1px 2px rgba(0,0,0,.4); color: #ffffff;font-size: 64px;line-height: 90px;font-style: normal;font-weight: 600;letter-spacing: -4px;text-transform: none;"><span style="">{{content.subtitle | raw}}</span>
-                        </h2>
-                        </div>
+    <div id="home" class="parallax vertical-center" style="background-image: url('../images/IMG_1999.JPG'); padding: 0;">
+        <div class="slider_content_outer" style="position: relative; height: 100%;">
+            <div class="slider_content skrollable skrollable-between" style="position: absolute; width: 98%; left: 0%; top: 33%; opacity: 1;"
+            data-0=" opacity: 1; width:98%; left:0.0%; top:33%; position: absolute" data-300=" opacity: 0; left:0.0%; top:23%;">
+                <div style="text-align: center; margin-top: 150px" class="text all_at_once subtitle_bellow_title no_separator">
+                    <div>
+                    <h4 style="     text-shadow: 1px 1px 2px rgba(0,0,0,.4);color: #ffffff;font-size: 26px;font-style: normal;font-weight: 600"><span>{{content.intro | raw}}</span></h4>
+                    </div>
+                    <div>
+                    <h2 style="    text-shadow: 1px 1px 2px rgba(0,0,0,.4); color: #ffffff;font-size: 64px;line-height: 90px;font-style: normal;font-weight: 600;letter-spacing: -4px;text-transform: none;"><span style="">{{content.subtitle | raw}}</span>
+                    </h2>
                     </div>
                 </div>
             </div>
+        </div>
     </div>
 
     
@@ -39,7 +39,7 @@
     <section id="skill">
         <div class="container-fluid" style="background: #f8f8f8; padding-top: 10px; padding-bottom: 80px;">
             <div class="container" id="service">
-                <div class="row" class="service" style="margin-top: 50px;">
+                <div class="row" style="margin-top: 50px;">
                     <div class="col-md-12 text-center" style="padding-bottom: 50px;">
                         <h1>Skills</h1>
                     </div>
@@ -57,7 +57,7 @@
 
 
     <section id="footer">
-        <div class="parallax2" style="background-image: url('../images/IMG_2001.JPG');">
+        <div class="parallax2" style="background-image: url('../images/IMG_2001.JPG'); padding: 0;">
             <div class="slider_content_outer" style="position: relative; height: 100%;">
                 <div class="slider_content skrollable skrollable-between" style="position: absolute; width: 98%; left: 0%; top: 33%; opacity: 1;"
                 data-0=" opacity: 1; width:98%; left:0.0%; top:33%; position: absolute" data-300=" opacity: 0; left:0.0%; top:23%;">
@@ -67,7 +67,7 @@
                             </h2>
                         </div>
                     <div class="container-fluid" id="means">
-                        <div class="row" class="means" >
+                        <div class="row">
                             {% if content.socialItems is not empty %}
                             <div class="col-md-12 text-center">
                                 {% for socialItem in content.socialItems %}
@@ -78,7 +78,7 @@
                             </div>
                              {% endif %}
                             <div class="col-md-12 text-center">
-                                <h2 style="text-shadow: 1px 1px 2px rgba(0,0,0,.4); color: #ffffff;font-size: 34px;line-height: 90px;font-style: normal;font-weight: 600;letter-spacing: -4px;text-transform: none;"><span style="">or call: {{content.phoneNumber}}</span></span>
+                                <h2 style="text-shadow: 1px 1px 2px rgba(0,0,0,.4); color: #ffffff;font-size: 34px;line-height: 90px;font-style: normal;font-weight: 600;letter-spacing: -4px;text-transform: none;"><span style="">or call: {{content.phoneNumber}}</span>
                                 </h2>
                             </div>
                         </div>  

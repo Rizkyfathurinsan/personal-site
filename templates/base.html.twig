@@ -31,27 +31,33 @@
   
   </head>
 
-  <body class="container-fluid" style="padding: 0;">
- 
+  <body>
 
-    <!-- header start -->
-    <header>
-        <nav class="navbar navbar-fixed-top">
-          <div class="container">
-            <img src="images/coconut(3).png" alt="coconut logo" style="padding-top:10px;">
-            <a class="navbar-brand" href="index.html#home">  Rizky Insan</a>
-            <ul class="nav navbar-nav navbar-right tinggi kanan">
-              <li style="font-size:20px;"><a href="#home">Home</a></li>
-              <li style="font-size:20px;"><a href="#means">Contact</a></li>
-              <li style="font-size:20px;"><a href="CV/Rizky_CV.pdf">See My CV here</a></li>
-            </ul>
-          </div>
-        </nav>
-    </header>
-            <!-- end of header -->
+    
+  
 
-    {% block content %}
-    {% endblock content %}
+      <!-- header start -->
+      <header>
+          <nav class="navbar navbar-fixed-top">
+            <div class="container">
+              <img src="images/coconut(3).png" alt="coconut logo" style="padding-top:10px;">
+              <a class="navbar-brand" href="index.html#home">  Rizky Insan</a>
+              <ul class="nav navbar-nav navbar-right tinggi kanan">
+                <li style="font-size:20px;"><a href="#home">Home</a></li>
+                <li style="font-size:20px;"><a href="#means">Contact</a></li>
+                <li style="font-size:20px;"><a href="CV/Rizky_CV.pdf">See My CV here</a></li>
+              </ul>
+            </div>
+          </nav>
+      </header>
+      <!-- end of header -->
+
+      <!--content start -->
+
+      {% block content %}
+      {% endblock content %}
+
+      <!-- end of conten -->
 
   </body>
 
