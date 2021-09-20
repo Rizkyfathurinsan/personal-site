@@ -7,6 +7,8 @@
 
 // any CSS you import will output into a single css file (app.css in this case)
 import './styles/app.css';
+import './styles/style.scss';
+import './styles/parallax.scss';
 
 // start the Stimulus application
 import './bootstrap';

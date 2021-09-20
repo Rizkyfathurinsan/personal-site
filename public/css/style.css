@@ -1,4 +1,3 @@
-\
 /* CSS crunched with Crunch - http://crunchapp.net/ */
 
 
@@ -7431,33 +7430,37 @@ ul.rig.columns-4 li {
 @media only screen and (min-width:320px) and (max-width:763px) {
   .tablet,
   .desktop
-}
 
-{
-  display: none;
-}
+  {
+    display: none;
+  }
+} 
 
 
-}
+
+
 @media only screen and (min-width:764px) and (max-width:999px) {
   .phone,
   .tablet
-}
-{
-  display: none;
-}
+
+  {
+    display: none;
+  }
 
 }
+
+
 @media only screen and (min-width:1000px) {
   .phone,
   .desktop
-}
-{
-  display:none;
-  max-height: 300px;
+
+  {
+    display:none;
+    max-height: 300px;
+  }
+  
 }
 
-}
 
 /** clearfix **/
 .clearfix:after {
@@ -7486,61 +7489,7 @@ html[xmlns] .clearfix {
   -o-animation: blink 0.7s infinite;
   animation: blink 0.7s infinite;
 }
-@-keyframes blink {
-  0% {
-    opacity:1;
-  }
-  50% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-@-webkit-keyframes blink {
-  0% {
-    opacity:1;
-  }
-  50% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-@-moz-keyframes blink {
-  0% {
-    opacity:1;
-  }
-  50% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-@-ms-keyframes blink {
-  0% {
-    opacity:1;
-  }
-  50% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-@-o-keyframes blink {
-  0% {
-    opacity:1;
-  }
-  50% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
+
 .typewriter p {
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
@@ -8090,15 +8039,9 @@ ul.bxslider {
   padding: 0 0 0 10px;
 }
 #slider .tooltip {
-  … transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-#slider li#first: hover .tooltip,
-#slider li#second: hover .tooltip,
-#slider li#third: hover .tooltip,
-#slider li#fourth: hover .tooltip,
-#slider li#fifth: hover .tooltip {
-  left: 0px;
-}
+
 .footer {
   background-color : #db4b40;
   margin-bottom: 0px;
